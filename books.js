@@ -16,7 +16,7 @@ const books = [
 
 let htmlOutput = '';
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
 	for (let book of books) {
 		const { title, details } = book
 		
