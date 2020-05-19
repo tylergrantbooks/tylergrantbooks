@@ -7,6 +7,12 @@ body {
 	background-color: #fafafa;
 }
 
+.max1000 {
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+}
+
 
 /* -------------- */
 /* --- Header --- */
@@ -19,11 +25,6 @@ header, footer {
 
 header {
 	background-image: linear-gradient(rgb(40, 60, 80), #f1f1f1);
-}
-
-header > div {
-	width: 1000px;
-	height: 100%;
 }
 
 header h1 {
@@ -112,7 +113,8 @@ nav {
 /* ----------------- */
 #books {  /* c-h */
 	flex-wrap: wrap;
-	width: 1400px;
+	width: 100%;
+	max-width: 1400px;
 	margin: 0px auto;
 }
 
@@ -163,8 +165,6 @@ nav {
 
 #author {
 	display: flex;
-	width: 1000px;
-	height: 100%;
 }
 
 #author > img {
@@ -186,6 +186,15 @@ footer {
 	background-image: linear-gradient(#f1f1f1, rgb(40, 60, 80));
 }
 
+footer .c-v {
+	position: relative;
+	cursor: pointer;
+}
+
+footer  .c-v:hover i {
+	color: #806000;
+}
+
 footer i {
 	font-size: 40px;
 	transition: 0.2s;
@@ -195,11 +204,29 @@ footer p {
 	margin-bottom: 0;
 }
 
-footer > div {
-	position: relative;
-	cursor: pointer;
-}
 
-footer > div:hover i {
-	color: #806000;
+/* ---------------------- */
+/* --- Responsiveness --- */
+/* ---------------------- */
+@media only screen and (max-width: 1000px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	#featured {
+		margin: 30px 0px;
+	}
+
+	.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+		padding: 30px 10% 50px;
+	}
+
+	#author_container {
+		margin: 30px 0px;
+		height: auto;
+	}
 }
