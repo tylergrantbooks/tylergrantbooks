@@ -68,39 +68,43 @@ nav {
 		url("images/books.jpg");
 }
 
-#featured_carousel {
-	width: 1000px;
-	height: 100%;
-}
-
 .carousel-inner, .carousel-item {
 	height: 100%;
 }
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
 	display: flex;
-	justify-content: center;
-	padding: 50px 15%;
+	padding: 60px 15%;
 }
 
 .carousel-item > img {
 	height: 100%;
 	margin-right: 40px;
+	object-fit: contain;
 }
 
-.carousel-item > div {
+.carousel_text {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	color: white;
 }
 
-.carousel-item > div > div {
+.carousel_links {
+	display: flex;
 	margin-top: auto;
 }
 
-.carousel-item i {
+.carousel_links > a:first-child {
 	margin-right: 8px;
+}
+
+.carousel_links i {
+	margin-right: 8px;
+}
+
+.cl_mobile {
+	display: none;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -121,7 +125,6 @@ nav {
 .book_item {
 	position: relative;
 	width: 200px;
-	height: 320px;
 	margin: 12px;
 	box-shadow: 0px 0px 4px black;
 	overflow: hidden;
@@ -209,6 +212,10 @@ footer p {
 /* --- Responsiveness --- */
 /* ---------------------- */
 @media only screen and (max-width: 1000px) {
+	.max1000 {
+		max-width: 100%;
+	}
+
 	h1 {
 		font-size: 2rem;
 	}
@@ -227,6 +234,90 @@ footer p {
 
 	#author_container {
 		margin: 30px 0px;
+		height: auto;
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+	header h1 {
+		font-size: 3rem;
+	}
+
+	.nav_item {
+		font-size: 14px;
+	}
+
+	.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-column-gap: 12px;
+		padding: 20px 20px 60px;
+	}
+
+	.carousel-item > img {
+		width: 175px;
+		height: auto;
+		margin-right: 0px;
+	}
+
+	.carousel_text {
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+
+	.carousel_text > h1 {
+		font-size: 1.5rem;
+	}
+
+	.carousel_text > p {
+		margin-bottom: .5rem;
+		font-size: 14px;
+	}
+
+	.carousel_links {
+		flex-direction: column;
+		margin-top: 0px;
+	}
+
+	.cl_desktop {
+		display: none;
+	}
+
+	.cl_mobile {
+		display: flex !important;
+	}
+
+	.carousel_links > a {
+		width: 100%;
+	}
+
+	.carousel_links > a:first-child {
+		margin-right: 0px;
+		margin-bottom: 8px;
+	}
+
+	.carousel-control-next, .carousel-control-prev {  /* Swipe to scroll on mobile */
+		display: none;
+	}
+
+	#books {
+		height: 544px;  /* Two books and their margins */
+		overflow: hidden;
+	}
+
+	.book_item {
+		width: 155px;
+	}
+
+	#author {
+		flex-direction: column-reverse;
+	}
+
+	#author > img {
+		width: 100%;
+		max-width: 400px;
 		height: auto;
 	}
 }
