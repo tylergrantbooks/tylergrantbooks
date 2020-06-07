@@ -155,6 +155,10 @@ nav {
 	top: 0%;
 }
 
+.book_item_overlay > p {
+	font-size: 14px;
+}
+
 
 /* ---------------- */
 /* --- Featured --- */
