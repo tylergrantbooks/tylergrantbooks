@@ -39,9 +39,9 @@ function setAllBooks(allBooks) {
 				</div>
 			</div>
 		`
-	})
+	}).join('')
 
-	$('#books').html(output)
+	$('#books_container').html(output)
 }
 
 function getCoverLink(title) {

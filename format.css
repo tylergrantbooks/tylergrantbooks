@@ -115,11 +115,14 @@ nav {
 /* ----------------- */
 /* --- All Books --- */
 /* ----------------- */
-#books {  /* c-h */
-	flex-wrap: wrap;
+#books {
 	width: 100%;
 	max-width: 1400px;
 	margin: 50px auto;
+}
+
+#books_container {  /* c-h */
+	flex-wrap: wrap;
 }
 
 .book_item {
@@ -157,6 +160,10 @@ nav {
 
 .book_item_overlay > p {
 	font-size: 14px;
+}
+
+#see_more {
+	margin-top: 12px;
 }
 
 
