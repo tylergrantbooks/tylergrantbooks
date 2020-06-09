@@ -49,7 +49,7 @@ function getCoverLink(title) {
 }
 
 
-$.getJSON('books.json', (allBooks) => {
+$.getJSON('../data/books.json', (allBooks) => {
 	setCarouselBooks(allBooks)
 	setAllBooks(allBooks)
 })
