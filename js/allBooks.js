@@ -28,4 +28,3 @@ $.getJSON('../data/books.json', (allBooks) => {
 	setAllBooks(allBooks)
 	books = allBooks
 })
-

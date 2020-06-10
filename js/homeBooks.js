@@ -3,7 +3,7 @@ function setCarouselBooks(allBooks) {
 
 	let output = carouselBooks.map(book => {
 		const { title, shortDescription, amazonLink, smashwordsLink } = book
-	
+
 		return `
 			<div class="carousel-item">
 				<img src="${getCoverLink(title)}" alt="${title} coverart">
@@ -22,7 +22,7 @@ function setCarouselBooks(allBooks) {
 			</div>
 		`
 	})
-	
+
 	output[0] = output[0].replace('carousel-item', 'carousel-item active')
 	$('.carousel-inner').html(output)
 }
@@ -49,7 +49,7 @@ function getCoverLink(title) {
 }
 
 
-$.getJSON('../data/books.json', (allBooks) => {
+$.getJSON('data/books.json', (allBooks) => {
 	setCarouselBooks(allBooks)
 	setAllBooks(allBooks)
 })
