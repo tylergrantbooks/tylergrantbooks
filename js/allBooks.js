@@ -14,6 +14,16 @@ function setAllBooks(allBooks) {
 					</div>
 				</div>
 			</div>
+
+			<div class="book_item_full_mobile">
+				<img src="${getCoverLink(title)}" alt="${title} coverart">
+				<h1>${title}</h1>
+				${longDescription.map(line => (`<p>${line}</p>`)).join('')}
+				<div class="book_item_full_links">
+					<a class="btn btn-outline-dark" href="${amazonLink}" target="_blank" role="button"><i class="fab fa-amazon"></i> Amazon</a>
+					<a class="btn btn-outline-dark" href="${smashwordsLink}" target="_blank" role="button"><i class="fab fa-amazon"></i> Smashwords</a>
+				</div>
+			</div>
 		`
 	})
 

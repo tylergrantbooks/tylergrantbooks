@@ -277,6 +277,10 @@ footer p {
 	margin-right: 8px;
 }
 
+.book_item_full_mobile {
+	display: none;
+}
+
 
 /* ---------------------- */
 /* --- Responsiveness --- */
@@ -404,11 +408,25 @@ footer p {
 
 	/* all-books */
 	.book_item_full {
-		grid-template-columns: 125px auto;
-		min-height: 300px;
+		display: none;
 	}
 
-	.book_item_full_text > h1 {
+	.book_item_full_mobile {
+		display: block;
+		width: 100%;
+		margin: 20px 0px;
+		padding: 20px;
+		border: 1px solid gray;
+	}
+
+	.book_item_full_mobile > img {
+		float: left;
+		width: 125px;
+		margin: 0px 20px 10px 0px;
+		object-fit: contain;
+	}
+
+	.book_item_full_mobile > h1 {
 		font-size: 1.5rem;
 	}
 }
@@ -424,15 +442,5 @@ footer p {
 		grid-column-gap: 14px;
 		margin: 14px 0px;
 		padding: 14px;
-	}
-
-	.book_item_full_links {
-		flex-direction: column;
-		width: max-content;
-	}
-
-	.book_item_full_links > a:first-child {
-		margin-right: 0px;
-		margin-bottom: 8px;
 	}
 }
