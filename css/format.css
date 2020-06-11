@@ -401,4 +401,38 @@ footer p {
 	#about {
 		padding: 0px 30px 20px;
 	}
+
+	/* all-books */
+	.book_item_full {
+		grid-template-columns: 125px auto;
+		min-height: 300px;
+	}
+
+	.book_item_full_text > h1 {
+		font-size: 1.5rem;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+	/* all-books */
+	#all_books {
+		padding: 0px 14px;
+	}
+
+	.book_item_full {
+		grid-column-gap: 14px;
+		margin: 14px 0px;
+		padding: 14px;
+	}
+
+	.book_item_full_links {
+		flex-direction: column;
+		width: max-content;
+	}
+
+	.book_item_full_links > a:first-child {
+		margin-right: 0px;
+		margin-bottom: 8px;
+	}
 }
