@@ -377,13 +377,13 @@ footer p {
 		display: none;
 	}
 
-	#books {
-		height: 544px;  /* Two books and their margins */
-		overflow: hidden;
-	}
-
 	.book_item {
 		width: 155px;
+		height: 248px;
+	}
+
+	.book_item:hover .book_item_overlay {
+		top: 100%;
 	}
 
 	#author_container {

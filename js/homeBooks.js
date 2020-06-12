@@ -28,17 +28,24 @@ function setCarouselBooks(allBooks) {
 }
 
 function setAllBooks(allBooks) {
-	const output = allBooks.map(book => {
-		const { title, shortDescription } = book
+	let i = 0;
 
-		return `
-			<div class="book_item">
-				<img class="book_item_image" src="${getCoverLink(title)}" alt="${title} coverart"/>
-				<div class="book_item_overlay">
-					${shortDescription.map(line => (`<p>${line}</p>`)).join('')}
+	const output = allBooks.map(book => {
+		if (i++ < 4) {
+			const { title, shortDescription } = book
+	
+			return `
+				<div class="book_item">
+					<img class="book_item_image" src="${getCoverLink(title)}" alt="${title} coverart"/>
+					<div class="book_item_overlay">
+						${shortDescription.map(line => (`<p>${line}</p>`)).join('')}
+					</div>
 				</div>
-			</div>
-		`
+			`
+		}
+		else {
+			return ''
+		}
 	}).join('')
 
 	$('#books_container').html(output)
