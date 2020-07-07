@@ -74,7 +74,7 @@ nav {
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
 	display: flex;
-	padding: 60px 15%;
+	padding: 40px 15% 60px;
 }
 
 .carousel-item > img {

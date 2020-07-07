@@ -34,6 +34,7 @@ function getCoverLink(title) {
 	return `../images/${title.replace(/ /g, '_')}.jpg`
 }
 
+
 $.getJSON('../data/books.json', (allBooks) => {
 	setAllBooks(allBooks)
 })

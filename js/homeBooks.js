@@ -1,5 +1,8 @@
+const carouselTitles = ['The Rose Thorn Man', 'Quarantine Fever', 'The Night Locker']
+
+
 function setCarouselBooks(allBooks) {
-	const carouselBooks = allBooks.filter(book => ['Brights', 'Endangered', 'The Fall'].includes(book.title))
+	const carouselBooks = carouselTitles.map(t => allBooks.find(book => book.title === t))
 
 	let output = carouselBooks.map(book => {
 		const { title, shortDescription, amazonLink, smashwordsLink } = book
@@ -28,12 +31,12 @@ function setCarouselBooks(allBooks) {
 }
 
 function setAllBooks(allBooks) {
-	let i = 0;
+	let i = 0
 
 	const output = allBooks.map(book => {
 		if (i++ < 4) {
 			const { title, shortDescription } = book
-	
+
 			return `
 				<div class="book_item">
 					<img class="book_item_image" src="${getCoverLink(title)}" alt="${title} coverart"/>
