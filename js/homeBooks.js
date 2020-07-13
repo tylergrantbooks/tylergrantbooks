@@ -34,21 +34,16 @@ function setAllBooks(allBooks) {
 	let i = 0
 
 	const output = allBooks.map(book => {
-		if (i++ < 4) {
-			const { title, shortDescription } = book
+		const { title, shortDescription } = book
 
-			return `
-				<div class="book_item">
-					<img class="book_item_image" src="${getCoverLink(title)}" alt="${title} coverart"/>
-					<div class="book_item_overlay">
-						${shortDescription.map(line => (`<p>${line}</p>`)).join('')}
-					</div>
+		return `
+			<div class="book_item">
+				<img class="book_item_image" src="${getCoverLink(title)}" alt="${title} coverart"/>
+				<div class="book_item_overlay">
+					${shortDescription.map(line => (`<p>${line}</p>`)).join('')}
 				</div>
-			`
-		}
-		else {
-			return ''
-		}
+			</div>
+		`
 	}).join('')
 
 	$('#books_container').html(output)
