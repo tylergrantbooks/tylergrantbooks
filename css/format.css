@@ -141,9 +141,45 @@ nav {
 }
 
 
-/* ---------------- */
-/* --- Featured --- */
-/* ---------------- */
+/* --------------- */
+/* --- YouTube --- */
+/* --------------- */
+hr {
+	width: 90%;
+	margin: 0 auto;
+}
+
+section#youtube {
+	width: 85%;
+	margin: 24px auto 38px;
+}
+
+section#youtube > h1, section#youtube > p {
+	text-align: center;
+}
+
+section#youtube > h1 {
+	margin-bottom: 1rem;
+}
+
+section#youtube > p:first-of-type {
+	margin-bottom: .5rem;
+}
+
+section#youtube > p:last-of-type {
+	margin-bottom: 1.5rem;
+}
+
+section#youtube > iframe {
+	width: 100%;
+	max-width: 560px;
+	height: 315px;
+}
+
+
+/* -------------- */
+/* --- Author --- */
+/* -------------- */
 #author_container {
 	width: 100%;
 	height: 500px;
