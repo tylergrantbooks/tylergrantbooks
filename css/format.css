@@ -1,3 +1,7 @@
+:root {
+	--main-dark-blue: rgb(30, 50, 70);
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -25,7 +29,7 @@ header, footer {
 }
 
 header {
-	background-image: linear-gradient(rgb(30, 50, 70), #f1f1f1);
+	background-image: linear-gradient(var(--main-dark-blue), #f1f1f1);
 }
 
 header h1 {
@@ -118,7 +122,7 @@ nav {
 #books {
 	width: 100%;
 	max-width: 1400px;
-	margin: 38px auto 24px;
+	margin: 50px auto 38px;
 }
 
 #books_container {  /* c-h */
@@ -149,12 +153,16 @@ hr {
 	margin: 0 auto;
 }
 
+section#youtube, section#coming_soon {
+	padding: 38px 8% 50px;
+}
+
 section#youtube {
-	width: 85%;
-	margin: 24px auto 38px;
+	background-color: var(--main-dark-blue);
 }
 
 section#youtube > h1, section#youtube > p {
+	color: #dddddd;
 	text-align: center;
 }
 
@@ -174,6 +182,31 @@ section#youtube > iframe {
 	width: 100%;
 	max-width: 560px;
 	height: 315px;
+}
+
+
+/* ------------------- */
+/* --- Coming Soon --- */
+/* ------------------- */
+#coming_soon > h1 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+#coming_soon_content {
+	display: flex;
+}
+
+#coming_soon_content > img {
+	width: 250px;
+	height: 400px;
+	margin-right: 20px;
+}
+
+#coming_soon_content > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 
@@ -215,7 +248,7 @@ section#youtube > iframe {
 /* --- Footer --- */
 /* -------------- */
 footer {
-	background-color: rgb(30, 50, 70);
+	background-color: var(--main-dark-blue);
 }
 
 footer .c-v {
@@ -395,6 +428,23 @@ footer p {
 		height: 248px;
 	}
 
+	#coming_soon > h1 {
+		margin-bottom: 1rem;
+	}
+
+	#coming_soon_content {
+		flex-direction: column;
+	}
+
+	#coming_soon_content > img {
+		margin: 0 auto 20px;
+	}
+
+	#coming_soon_content p {
+		margin-bottom: 0.5rem;
+		text-align: center;
+	}
+
 	#author_container {
 		height: auto;
 		padding: 20px 0px 0px;
@@ -442,6 +492,12 @@ footer p {
 
 
 @media only screen and (max-width: 500px) {
+	/* home */
+	.book_item_image {
+		width: 150px;
+		height: 240px;
+	}
+
 	/* all-books */
 	#all_books {
 		padding: 0px 14px;
