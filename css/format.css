@@ -486,6 +486,16 @@ footer p {
 		padding: 0px 30px 20px;
 	}
 
+	footer {
+		height: 250px;
+	}
+
+	footer > .max1200 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 500px;
+	}
+
 	/* all-books */
 	.book_item_full {
 		display: none;
