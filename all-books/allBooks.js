@@ -9,6 +9,8 @@ function makeLink(link) {
 }
 
 const allBooks = booksJson.books.map(book => {
+	if (!book.released) return ''
+
 	const { title, fullCopy, links } = book
 
 	const _title = title.replace(/ /g, '_')

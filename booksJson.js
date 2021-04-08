@@ -11,7 +11,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Brights-Tyler-Grants-Voices-Grant/dp/B0882NXW37/",
 				"smashwords": "https://www.smashwords.com/books/view/1019756"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Endangered",
@@ -30,7 +31,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Endangered-Tyler-Grant-ebook/dp/B0897HNZLF/",
 				"smashwords": "https://www.smashwords.com/books/view/1024400"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "The Fall",
@@ -43,7 +45,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Fall-First-Tyler-Grants-Voices-ebook/dp/B0878P9ZGB/",
 				"smashwords": "https://www.smashwords.com/books/view/1017973"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Last Request",
@@ -59,7 +62,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Last-Request-Tyler-Grant/dp/B089CFPJJS/",
 				"smashwords": "https://www.smashwords.com/books/view/1024973"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "The Night Locker",
@@ -75,7 +79,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Night-Locker-Tyler-Grants-Voices/dp/B087SGSR22/",
 				"smashwords": "https://www.smashwords.com/books/view/1019104"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "The Rose Thorn Man",
@@ -93,7 +98,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Rose-Thorn-Man-Tyler-Grant-ebook/dp/B089RTGB2Y/",
 				"smashwords": "https://www.smashwords.com/books/view/1026476"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Quarantine Fever",
@@ -112,7 +118,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/Quarantine-Fever-Tyler-Grant-ebook/dp/B08C2MJ3QM/",
 				"smashwords": "https://www.smashwords.com/books/view/1030218"
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Series of Voices",
@@ -125,7 +132,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/gp/product/B08DCMC4YJ/ref=dbs_a_def_rwt_bibl_vppi_i7",
 				"smashwords": ""
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Shaken",
@@ -145,7 +153,8 @@ const booksJson = {
 			"links": {
 				"amazon": "https://www.amazon.com/gp/product/B08H5XJC2V/",
 				"smashwords": ""
-			}
+			},
+			released: true
 		},
 		{
 			"title": "Secret in the Attic",
@@ -158,11 +167,40 @@ const booksJson = {
 			"links": {
 				"amazon": "",
 				"smashwords": ""
-			}
+			},
+			released: true
+		},
+		{
+			"title": "Sinner",
+			"shortCopy": [
+				"Atlas Martin and Mae Cooper travel to the Emerald City where they team up with Detectives Max Thatcher and Hank Peterson to stop a slaughter. A dangerous serial killer owns the downtown streets and cannot be stopped. When Detective Thatcher's wife goes missing, and he is pulled from the case, it is up to Atlas and Mae to bring peace back to Seattle. But victory comes at a great cost... and a nail-biting night in St. Michael's Cathedral proves even more dangerous than Atlas's encounter with Pike Shepherd a year ago."
+			],
+			"fullCopy": [
+				"Atlas Martin and Mae Cooper travel to the Emerald City where they team up with Detectives Max Thatcher and Hank Peterson to stop a slaughter. A dangerous serial killer owns the downtown streets and cannot be stopped. When Detective Thatcher's wife goes missing, and he is pulled from the case, it is up to Atlas and Mae to bring peace back to Seattle. But victory comes at a great cost... and a nail-biting night in St. Michael's Cathedral proves even more dangerous than Atlas's encounter with Pike Shepherd a year ago."
+			],
+			"links": {
+				"amazon": "",
+				"smashwords": ""
+			},
+			released: true
+		},
+		{
+			"title": "Scars",
+			"shortCopy": [
+				"Atlas Martin returns home to Garland. He is alone, scarred, battered, and unwell. Atlas is shaken by events that bring back the memory of his father’s suicide, the horrific night on Shepherd's ranch, and the events at St. Michael's Cathedral. When he finally gets answers to the questions he’s had for a dozen years about his past, Atlas realizes that he must either change to survive, or give in and lose out on everything the way his father did so long ago. As if that wasn’t enough, the greatest heist in Garland history has begun. You can guess who's right in the middle of it."
+			],
+			"fullCopy": [
+				"Atlas Martin returns home to Garland. He is alone, scarred, battered, and unwell. Atlas is shaken by events that bring back the memory of his father’s suicide, the horrific night on Shepherd's ranch, and the events at St. Michael's Cathedral. When he finally gets answers to the questions he’s had for a dozen years about his past, Atlas realizes that he must either change to survive, or give in and lose out on everything the way his father did so long ago. As if that wasn’t enough, the greatest heist in Garland history has begun. You can guess who's right in the middle of it."
+			],
+			"links": {
+				"amazon": "",
+				"smashwords": ""
+			},
+			released: false
 		}
 	],
 	"featured": [
-		"Shaken",
+		"Sinner",
 		"Quarantine Fever",
 		"The Night Locker"
 	]

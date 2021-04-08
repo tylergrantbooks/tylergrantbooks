@@ -50,6 +50,8 @@ $('.carousel-inner').html(carouselInner)
 
 // books_container
 const booksContainerHtml = booksJson.books.map(book => {
+	if (!book.released) return ''
+
 	const { title } = book
 	const _title = title.replace(/ /g, '_')
 
@@ -61,3 +63,26 @@ const booksContainerHtml = booksJson.books.map(book => {
 }).join('')
 
 $('#books_container').html(booksContainerHtml)
+
+
+// coming_soon
+function comingSoonHtml() {
+	const book = booksJson.books.find(book => !book.released)
+
+	if (!book) return ''
+
+	const { title, fullCopy } = book
+	const _title = title.replace(/ /g, '_')
+
+	return `
+		<h1>Coming Soon: &quot;${title}&quot;</h1>
+		<div id="coming_soon_content">
+			<img src="images/${_title}.jpg" alt="${title} coverart">
+			<div>
+				${fullCopy.map(c => `<p>${c}</p>`).join('')}
+			</div>
+		</div>
+	`
+}
+
+$('#coming_soon').html(comingSoonHtml())
