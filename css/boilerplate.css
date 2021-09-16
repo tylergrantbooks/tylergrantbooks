@@ -6,15 +6,10 @@
 	padding: 0;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 }
-
-/* h1, h2, p {
-	margin-bottom: 0px;  /* Override Bootstrap *
-} */
-
-
 
 /* ---------------------- */
 /* --- Common Classes --- */
@@ -47,46 +42,7 @@ html, body {
 	align-items: center;
 }
 
-
 /* Images */
 .background-image {
 	background: center center/cover no-repeat;
-}
-
-.contain-image {
-	background: center center/contain no-repeat;
-}
-
-
-/* Animations */
-body {
-	overflow-x: hidden;
-}
-
-.a-left, .a-right, .a-up {
-	position: relative;
-	transition: 1s;
-}
-
-.a-left {
-	left: 2000px;
-}
-
-.a-right {
-	left: -2000px;
-}
-
-.a-up {
-	top: 50px;
-	opacity: 0;
-}
-
-.a-delay {
-	transition-delay: 0.5s;
-}
-
-.a-reset {
-	top: 0px !important;
-	left: 0px !important;
-	opacity: 1 !important;
 }
